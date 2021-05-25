@@ -4,7 +4,8 @@ const router = express.Router();
 
 //for making reservation
 router.post('/login/reservation',function(req,res){
-    
+    // const reg_id=0;
+    // const Reservation_Date=0;
        const reservation = new Reservation({
         Reservation_Date:req.body.Reservation_Date,
         Source:req.body.Source,
